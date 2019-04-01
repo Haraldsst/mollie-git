@@ -1,0 +1,59 @@
+@import '../../../variables.scss';
+
+.title.title {
+  margin-bottom: 10px;
+}
+
+.amount.amount {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.data-container {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+
+  @media (min-width: $small-up) {
+    padding: 30px;
+  }
+}
+
+dl {
+  margin: 0;
+
+  @media (min-width: $small-up) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px 30px;
+    align-items: center;
+  }
+}
+
+dt {
+  font-weight: bold;
+
+  @media (max-width: $small-down) {
+    margin-top: 15px;
+  }
+}
+
+dt:first-child {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  margin-right: 10px;
+}
+
+.read-more {
+  margin: 1.5em 0 0;
+}

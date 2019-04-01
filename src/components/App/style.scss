@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  background: #f7f7f7;
+
+  @media (min-width: $small-up) {
+    padding: 30px;
+  }
+
+  @media (min-width: $medium-up) {
+    padding: 60px 80px;
+  }
+}

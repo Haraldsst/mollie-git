@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.tab-bar {
+  display: flex;
+  margin: 0 0 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.tab-bar a {
+  display: block;
+  margin-left: -1px;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: inherit;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.15s ease-out;
+
+  @media (min-width: $small-up) {
+    min-width: 100px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+.tab-bar a:not(.is-active):hover,
+.tab-bar a:not(.is-active):focus {
+  background: #f7f7f7;
+}
+
+.tab-bar li:first-child a {
+  margin-left: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.tab-bar li:last-child a {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.tab-bar .is-active {
+  /* Position the tab on top of other tabs */
+  z-index: 1;
+  position: relative;
+  background: $color-primary;
+  border-color: $color-primary;
+  color: #fff;
+}
